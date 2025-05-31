@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    place-items: center;
+}
+
+.texto {
+    color: white;
+    width: 300px;
+    height: 111px;
+    grid-column: 1 / 2;
+}
+
+.texto h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    font-size: 15px;
+}
+
+.form-duvida {
+    display: flex;
+    flex-direction: column;
+    width: 349px;
+    height: 378px;
+    grid-column: 2 / 3;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.form-duvida input {
+    width: 298px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0px 25.5px 4px;
+    padding-left: 10px;
+}
+
+.form-duvida input[name="mensagem"] {
+    height: 100px;
+    padding-bottom: 70px;
+    margin-bottom: 5px;
+}
+
+.form-duvida input::placeholder {
+    font-weight: 700;
+    font-size: 15px;
+    color: #A8A8A8;
+}
+
+.form-duvida h3 {
+    bottom: 10px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.form-duvida .aviso {
+    min-height: 9.5px;
+    margin-left: 25px;
+    font-size: 8px;
+    position: relative;
+    bottom: 5px;
+    color: #F52E2E;
+    font-weight: 400;
+}
+
+.form-duvida input:last-child {
+    background-color: #3CCC87;
+    height: 41px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form-duvida input:last-child:active {
+    transform: scale(0.98);
+}
+
+.form-duvida input.preenchido {
+    border: 1px solid #00C22B;
+}
+
+.form-duvida input.vazio {
+    border: 1px solid red;
+}
